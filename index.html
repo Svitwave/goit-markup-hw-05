@@ -23,6 +23,7 @@
           <a class="logo" href="./index.html"
             >Web<span class="logo-studio-header">Studio</span></a
           >
+
           <ul class="nav-list">
             <li>
               <a class="nav-link-active" href="./index.html">Studio</a>
@@ -59,7 +60,6 @@
             <span class="line">Effective Solutions</span>
             <span class="line">for Your Business</span>
           </h1>
-
           <button class="hero-button" type="button">Order Service</button>
         </div>
       </section>
@@ -465,5 +465,86 @@
         </div>
       </div>
     </footer>
+    <div class="modal-overlay">
+      <div class="modal">
+        <label for="modal-toggle" class="modal-close"></label>
+        <form
+          class="form"
+          name="issue_report_form"
+          autocomplete="off"
+          novalidate
+        >
+          <button class="modal-close" type="button">X</button>
+          <h3>Leave your contacts and we will call you back</h3>
+
+          <label class="form-label" for="username">
+            Name
+            <div class="input-wrapper">
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+              <input
+                type="text"
+                class="form-input"
+                id="username"
+                name="username"
+                placeholder="Your name"
+              />
+            </div>
+          </label>
+
+          <label class="form-label" for="phone">
+            Phone
+            <div class="input-wrapper">
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+              <input
+                type="tel"
+                class="form-input"
+                id="phone"
+                name="contact_tel"
+                placeholder="Phone number"
+              />
+            </div>
+          </label>
+
+          <label class="form-label" for="email">
+            Email
+            <div class="input-wrapper">
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+              <input
+                type="email"
+                class="form-input"
+                id="email"
+                name="user_email"
+                placeholder="Your email"
+              />
+            </div>
+          </label>
+
+          <label class="form-label" for="comment">
+            Comment
+            <textarea
+              class="form-input"
+              id="comment"
+              name="comment"
+              placeholder="Text input"
+              rows="3"
+            ></textarea>
+          </label>
+
+          <label>
+            <input type="checkbox" name="agree" value="reading" />
+            I accept the terms and conditions of the
+            <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+          </label>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
