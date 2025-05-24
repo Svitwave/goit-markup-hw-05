@@ -666,8 +666,8 @@ input:not(:placeholder-shown) {
 
 .svg-close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 32px;
+  right: 32px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
