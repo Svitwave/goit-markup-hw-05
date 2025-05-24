@@ -665,13 +665,28 @@ input:not(:placeholder-shown) {
 } */
 
 /* А ось порожнє — сіре */
-
+.close {
+  color: black;
+}
 .svg-close {
-  border-radius: 4px;
+  /* position: absolute; */
+  top: 16px;
+  right: 16px;
   width: 24px;
   height: 24px;
-  fill: #2e2f42;
+  border-radius: 50%;
+  background: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
 }
+.svg-close:hover,
+.svg-close:focus {
+  background: #e4e4ed;
+}
+
 input::placeholder {
   font-weight: 400;
   font-size: 12px;
