@@ -672,10 +672,7 @@ input:not(:placeholder-shown) {
   height: 24px;
   border-radius: 50%;
   background: #f4f4fd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+
   transition: background 0.2s;
 }
 .svg-close:hover,
