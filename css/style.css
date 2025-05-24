@@ -626,6 +626,75 @@ p {
   flex-direction: column;
 }
 
+.form-input::placeholder {
+  color: #fff;
+}
+
+.text-subscribe {
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  padding-bottom: 16px;
+}
+.button-subscribe {
+  display: flex;
+  align-items: center;
+
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 4px;
+  width: 165px;
+  height: 40px;
+  /* padding: 8px 24px; */
+  /* height: 40px; */
+  background: #4d5ae5;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  padding: 0 24px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-subscribe:hover,
+.button-subscribe:focus {
+  background: #404bbf;
+}
+
+.subscribe-icon {
+  fill: #fff;
+}
+
+.div-subscribe {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.form-input {
+  height: 40px;
+  min-width: 264px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+  border-color: #4d5ae5;
+  outline: none;
+}
+
 /* .modal-overlay {
   position: fixed;
   top: 0;
@@ -646,6 +715,7 @@ p {
   pointer-events: auto;
 } */
 .modal {
+  position: relative;
   background-color: #fff;
   border-radius: 4px;
   padding: 16px;
@@ -655,29 +725,19 @@ p {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* }input:focus:not(:placeholder-shown) {
-  border-color: #4d5ae5;
-  color: #2e2f42;
-}
-input:not(:placeholder-shown) {
-  border-color: #4d5ae5;
-  color: #2e2f42;
-}  */
-
 .svg-close {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 16px;
+  right: 16px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background: #f4f4fd;
-
   transition: background 0.2s;
-}
-.svg-close:hover,
-.svg-close:focus {
-  background: #e4e4ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 input::placeholder {
@@ -832,13 +892,6 @@ button[type="submit"] {
   color: #2e2f42;
 }
 .send {
-  /* margin: 0 auto;
-  border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5; */
   display: block;
   margin: 32px auto 0 auto;
   padding: 16px 32px;
