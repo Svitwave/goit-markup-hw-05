@@ -622,7 +622,7 @@ p {
   fill: var(--cloud);
 }
 
-.modal-imput {
+.modal-input {
   width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
@@ -684,16 +684,15 @@ p {
   color: #fff;
   padding: 8px 16px;
   font-size: 16px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus {
   border-color: #4d5ae5;
   outline: none;
 }
-
+/* 
 .form-input::placeholder {
   color: #fff;
-}
+} */
 
 .form {
   display: flex;
@@ -712,23 +711,17 @@ p {
   margin-bottom: 4px;
 }
 
-.form-label {
-  margin-bottom: 4px;
-  font-size: 14px;
-  color: #8e8f99;
-  font-weight: 500;
-}
-
 .form-input:focus,
 .form-input:active {
   border-color: #4d5ae5;
   outline: none;
 }
-.form-input,
+
+/* .form-input,
 textarea.form-input {
   height: 40px;
   width: 100%;
-  /* padding: 16px 16px 16px 48px; */
+   padding: 16px 16px 16px 48px; 
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   background-color: transparent;
@@ -736,7 +729,7 @@ textarea.form-input {
 
   color: #2e2f42;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+}  */
 
 input::placeholder {
   font-weight: 400;
@@ -764,8 +757,8 @@ input::placeholder {
   position: absolute;
   left: 16px;
   top: 50%;
-  translate: Y(-50%);
-  /* transform: translateY(-50%); */
+
+  transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
   fill: #4f4f4f;
@@ -786,6 +779,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   margin-left: auto;
+  margin-right: auto;
 }
 .subscribe-form {
   display: flex;
