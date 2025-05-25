@@ -680,7 +680,6 @@ p {
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* background: transparent; */
   color: #fff;
   padding: 8px 16px;
   font-size: 16px;
@@ -689,10 +688,9 @@ p {
   border-color: #4d5ae5;
   outline: none;
 }
-/* 
-.form-input::placeholder {
+.modal-input::placeholder {
   color: #fff;
-} */
+}
 
 .form {
   display: flex;
@@ -716,20 +714,6 @@ p {
   border-color: #4d5ae5;
   outline: none;
 }
-
-/* .form-input,
-textarea.form-input {
-  height: 40px;
-  width: 100%;
-   padding: 16px 16px 16px 48px; 
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-  background-color: transparent;
-  gap: 8px;
-
-  color: #2e2f42;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}  */
 
 input::placeholder {
   font-weight: 400;
@@ -785,44 +769,6 @@ input::placeholder {
   display: flex;
   gap: 24px;
   align-items: center;
-}
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 250ms ease-in-out;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.modal-overlay.is-open {
-  opacity: 1;
-  pointer-events: auto;
-}
-.modal {
-  position: absolute;
-  background-color: #fff;
-  border-radius: 4px;
-  top: 50%;
-  left: 50%;
-  width: 408px;
-  min-height: 584px;
-  transform: translate(-50%, -50%);
-  background: #fcfcfc;
-
-  padding: 72px 24px 24px 24px;
-  max-height: 80%;
-  max-width: 480px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .paragraf {
@@ -973,9 +919,9 @@ button[type="submit"] {
 } */
 
 .modal-close {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   background-color: #e7e9fc;
   position: absolute;
   top: 24px;
@@ -1008,7 +954,7 @@ button[type="submit"] {
 .close:focus {
   fill: #fff;
 }
-.send {
+.send-button {
   display: block;
   margin: 32px auto 0 auto;
   padding: 16px 32px;
@@ -1024,11 +970,51 @@ button[type="submit"] {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   box-shadow: 0px 4px 4px rgba(46, 47, 66, 0.08);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.send:hover,
-.send:focus {
+.send-button:hover,
+.send-button:focus {
   background-color: #404bbf;
 }
+
+/* .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  width: 408px;
+  min-height: 584px;
+  transform: translate(-50%, -50%);
+  background: #fcfcfc;
+
+  padding: 72px 24px 24px 24px;
+  max-height: 80%;
+  max-width: 480px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */

@@ -490,21 +490,24 @@
 
     <div class="modal-overlay">
       <div class="modal">
-        <!-- <div class="svg-close"></div> -->
-        <p class="paragraf">Leave your contacts and we will call you back</p>
         <button class="modal-close" type="button">
-          X<svg class="close" width="8" height="8">
+          <svg class="close" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
+
+        <!-- <div class="svg-close"></div> -->
+        <p class="paragraf">Leave your contacts and we will call you back</p>
+
         <form
           class="form"
           name="issue_report_form"
           autocomplete="off"
           novalidate
         >
-          <label class="form-label" for="user-name"> Name</label>
           <div class="input-wrapper">
+            <label class="form-label" for="user-name"> Name</label>
+
             <input
               type="text"
               class="form-input"
@@ -544,9 +547,9 @@
                 placeholder="Your email"
             /></label>
           </div>
-
-          <label class="form-label" for="user-comment"> Comment</label>
           <div class="input-wrapper">
+            <label class="form-label" for="user-comment"> Comment</label>
+
             <textarea
               class="textarea-input"
               id="user-comment"
@@ -576,7 +579,7 @@
             >
           </div>
 
-          <button class="send" type="button">Send</button>
+          <button class="send-button" type="button">Send</button>
         </form>
       </div>
     </div>
