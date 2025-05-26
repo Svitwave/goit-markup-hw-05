@@ -699,12 +699,12 @@ p {
   color: #fff;
 }
 
-.form {
+/* .form {
   display: flex;
   flex-direction: column;
   gap: 8px;
   padding: 24px 24px 0 24px;
-}
+} */
 
 .form-label {
   font-size: 12px;
@@ -736,9 +736,6 @@ input::placeholder {
 .form .input-wrapper:nth-child(4) {
   margin-bottom: 16px;
 }
-/* .form div:nth-child(5) {
-  margin-bottom: 24px;
-} */
 
 .input-wrapper-checkbox {
   position: relative;
@@ -933,7 +930,6 @@ input::placeholder {
 .send-button:focus {
   background-color: #404bbf;
 }
-/* 
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -951,10 +947,11 @@ input::placeholder {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
-} */
+}
 .modal {
   position: absolute;
   background-color: #fff;
@@ -967,8 +964,8 @@ input::placeholder {
   background: #fcfcfc;
 
   padding: 72px 24px 24px 24px;
-  max-height: 80%;
-  max-width: 480px;
+  /* max-height: 80%; */
+  /* max-width: 480px; */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
