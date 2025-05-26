@@ -6,6 +6,8 @@
   --ocean: #404bbf;
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
+  --checkbox-bg-checked: #404bbf;
+  --checkbox-icon-fill: #f4f4fd;
 }
 
 .container {
@@ -686,7 +688,7 @@ p {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
-  padding: 8px 16px;
+
   font-size: 16px;
 }
 .form-input:focus {
@@ -825,7 +827,7 @@ input::placeholder {
   outline: transparent;
   resize: none;
   /* border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  border-color: #4d5ae5;
+  /* border-color: #4d5ae5; */
 }
 .textarea-input:focus {
   border-color: #4d5ae5;
@@ -943,7 +945,7 @@ button[type="submit"] {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  background: none;
+  /* background: none; */
   border: none;
   font-size: 20px;
   line-height: 1;
@@ -952,6 +954,7 @@ button[type="submit"] {
 .modal-close:hover,
 .modal-close:focus {
   background-color: #404bbf;
+  fill: #fff;
   border: none;
 }
 
@@ -987,7 +990,7 @@ button[type="submit"] {
   background-color: #404bbf;
 }
 
-.modal-overlay {
+/* .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -1025,4 +1028,4 @@ button[type="submit"] {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
