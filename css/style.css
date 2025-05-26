@@ -733,6 +733,13 @@ input::placeholder {
   position: relative;
   margin-bottom: 8px;
 }
+.form .input-wrapper:nth-child(4) {
+  margin-bottom: 16px;
+}
+.form .input-wrapper:nth-child(5) {
+  margin-bottom: 24px;
+}
+
 .input-wrapper-checkbox {
   position: relative;
   margin-bottom: 16px;
@@ -894,13 +901,12 @@ input::placeholder {
 
 /* 🎯 Коли input чекнутий — міняємо фон, бордер, іконку */
 .visually-hidden:checked + .custom-checkbox .checkbox-icon {
-  background-color: var(--checkbox-bg-checked);
-  border: none;
-}
-
-.visually-hidden:checked + .custom-checkbox .checkbox-svg {
   fill: var(--checkbox-icon-fill);
 }
+
+/* .visually-hidden:checked + .custom-checkbox .checkbox-svg {
+  fill: var(--checkbox-icon-fill);
+} */
 .form h3 {
   text-align: center;
   font-size: 16px;
