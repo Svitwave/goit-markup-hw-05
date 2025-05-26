@@ -933,7 +933,7 @@ input::placeholder {
 .send-button:focus {
   background-color: #404bbf;
 }
-
+/* 
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -954,7 +954,7 @@ input::placeholder {
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
-}
+} */
 .modal {
   position: absolute;
   background-color: #fff;
