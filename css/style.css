@@ -736,7 +736,7 @@ input::placeholder {
 .form .input-wrapper:nth-child(4) {
   margin-bottom: 16px;
 }
-.form .input-wrapper:nth-child(5) {
+.form div:nth-child(5) {
   margin-bottom: 24px;
 }
 
@@ -902,6 +902,8 @@ input::placeholder {
 /* 🎯 Коли input чекнутий — міняємо фон, бордер, іконку */
 .visually-hidden:checked + .custom-checkbox .checkbox-icon {
   fill: var(--checkbox-icon-fill);
+  background-color: var(--checkbox-bg-checked);
+  border: none;
 }
 
 .form h3 {
