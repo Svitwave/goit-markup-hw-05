@@ -736,13 +736,13 @@ input::placeholder {
 .form .input-wrapper:nth-child(4) {
   margin-bottom: 16px;
 }
-.form div:nth-child(5) {
+/* .form div:nth-child(5) {
   margin-bottom: 24px;
-}
+} */
 
 .input-wrapper-checkbox {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .input-wrapper:focus-within .input-icon {
   fill: #4d5ae5;
@@ -853,9 +853,10 @@ input::placeholder {
   gap: 12px; */
 }
 .custom-checkbox input:checked + .checkbox-icon {
-  background-color: #4d5ae5;
+  background-color: #404bbf;
   border-color: #4d5ae5;
   fill: #fff;
+  border: none;
 }
 
 .checkbox-icon {
