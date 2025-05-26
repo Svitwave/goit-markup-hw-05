@@ -664,11 +664,16 @@ p {
 
 .button-subscribe:hover,
 .button-subscribe:focus {
-  background: #404bbf;
+  /* background: #404bbf; */
+  fill: #fff;
 }
 .subscribe-icon {
   fill: #fff;
   margin-left: 16px;
+}
+
+.form-wrapper {
+  position: relative;
 }
 
 .form-input {
@@ -724,11 +729,11 @@ input::placeholder {
 }
 .input-wrapper {
   position: relative;
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .input-wrapper-checkbox {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .input-wrapper:focus-within .input-icon {
   fill: #4d5ae5;
@@ -813,11 +818,13 @@ input::placeholder {
   color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
   padding: 8px 16px;
   outline: transparent;
   resize: none;
-  border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   border-color: #4d5ae5;
 }
 .textarea-input:focus {
@@ -919,10 +926,11 @@ button[type="submit"] {
 } */
 
 .modal-close {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
   background-color: #e7e9fc;
+
   position: absolute;
   top: 24px;
   right: 24px;
